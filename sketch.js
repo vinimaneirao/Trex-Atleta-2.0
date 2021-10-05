@@ -252,8 +252,9 @@ console.log(solo.x);
     
     //botao de reiniciar
     
-    if (mousePressedOver(botaoreiniciar)){
+    if (mousePressedOver(botaoreiniciar)|| touches.length>0){
       resetar();
+      touches = [];
     }
     
   //*FIM ESTADO E JOGO FINAL*
